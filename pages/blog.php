@@ -2,5 +2,5 @@
   <div class="bg-red-400 p-4 text-white">
     asd
   </div>
-  <div>as asdasdd</div>
+  <div>asasdd</div>
 </div>
