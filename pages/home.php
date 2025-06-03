@@ -1,9 +1,8 @@
-<div class="w-screen h-screen overflow-hidden relative">
+<div class="h-screen overflow-hidden relative">
   <div id="slider" class="flex transition-transform duration-1000 ease-in-out w-[300%] h-full">
-
     <!-- Slide 1 -->
-    <div class="w-screen h-screen flex px-[10rem] justify-evenly items-center bg-amber-50 text-slate-800">
-      <div class="flex flex-col w-[60%] space-y-4">
+    <div class="w-screen h-screen flex items-center bg-amber-50 text-slate-800">
+      <div class="flex flex-col w-full space-y-4 bg-red-400">
         <p class="text-4xl font-bold leading-tight tracking-wide">
           Di Gerbang Dragonara,<br />
           <span class="text-amber-700">Ilmu dan Legenda Menyatu.</span>
@@ -13,13 +12,10 @@
           Dibimbing oleh tradisi, didorong oleh imajinasi.
         </p>
       </div>
-      <img src="assets/slider/slider4.png" alt="Slider" class="w-[25%] max-w-4xl object-contain drop-shadow-lg" />
+      <!-- <img src="assets/slider/slider4.png" alt="Slider" class="w-full md:w-[25%] object-contain drop-shadow-lg bg-red-400 hidden md:block" /> -->
     </div>
-
-
-
     <!-- Slide 2 -->
-    <div class="w-screen h-screen flex px-[10rem] justify-evenly items-center bg-amber-50 text-slate-800">
+    <!-- <div class="w-screen h-screen flex px-[10rem] justify-evenly items-center bg-amber-50 text-slate-800">
       <div class="flex flex-col w-[60%] space-y-4">
         <p class="text-4xl font-bold leading-tight tracking-wide">
           Belajar di Benteng Para Cendekia,<br />
@@ -30,24 +26,28 @@
           keberanian menjelajah
         </p>
       </div>
-      <img src="assets/slider/slider6.png" alt="Slider" class="w-[25%] max-w-4xl object-contain drop-shadow-lg" />
-    </div>
-
+      <img src="assets/slider/slider6.png" alt="Slider" class="w-[25%] object-contain drop-shadow-lg" />
+    </div> -->
     <!-- Slide 3 -->
-    <div class="w-screen h-screen flex px-[10rem] justify-evenly items-center bg-amber-50 text-slate-800">
+    <!-- <div class="w-screen h-screen flex px-[10rem] justify-evenly items-center bg-amber-50 text-slate-800">
       <div class="flex flex-col w-[60%] space-y-4">
         <p class="text-4xl font-bold leading-tight tracking-wide">
           Siap Menaklukkan Dunia,<br />
           <span class="text-amber-700">Seperti Naga Menaklukkan Langit.</span>
         </p>
         <p class="text-sm text-slate-700 italic leading-relaxed">
-          Kami tidak hanya mencetak sarjana, tapi penjelajah zaman. <br /> Siap melesat menembus batas dengan api ambisi yang
+          Kami tidak hanya mencetak sarjana, tapi penjelajah zaman. <br /> Siap melesat menembus batas dengan api ambisi
+          yang
           menyala
         </p>
       </div>
-      <img src="assets/slider/slider5.png" alt="Slider" class="w-[25%] max-w-4xl object-contain drop-shadow-lg" />
-    </div>
-
+      <img src="assets/slider/slider5.png" alt="Slider" class="w-[25%] object-contain drop-shadow-lg" />
+    </div> -->
+  </div>
+</div>
+<div class="h-screen">
+  <div class="px-[10rem]">
+    sad
   </div>
 </div>
 
