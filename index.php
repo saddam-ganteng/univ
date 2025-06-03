@@ -1,4 +1,6 @@
 <?php
+include_once "configs/db.php";
+
 $page = $_GET['page'] ?? 'home';
 
 $title = ucfirst($page) . ' | Universitas Dragonara';

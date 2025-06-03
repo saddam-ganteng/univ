@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <?php include 'components/topbar.php'; ?>
+    <?php include 'templates/topbar.php'; ?>
     <!-- <main class="px-4 md:px-10 lg:px-20 py-4"> -->
     <?php include $content; ?>
     <!-- </main> -->
-    <?php include 'components/footer.php'; ?>
+    <!-- <?php include 'templates/footer.php'; ?> -->
 </body>
 
 </html>
