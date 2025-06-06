@@ -21,9 +21,11 @@
           Blog</div>
       </div>
     </div>
-    <div class="hidden lg:block bg-red-400 p-2 rounded text-white">
-      asd
+    <div class="hidden lg:block bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-xl text-sm font-medium shadow transition duration-200 hover:shadow-lg 
+              hover:cursor-pointer">
+      Daftar
     </div>
+
 
     <button id="hamburger-btn" class="lg:hidden text-stone-700">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
