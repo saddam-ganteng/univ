@@ -9,22 +9,27 @@
       <div class="hidden lg:flex items-center gap-10">
         <div
           class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          Home</div>
+          Beranda</div>
         <div
           class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          About</div>
+          Tentang</div>
         <div
           class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          Contact</div>
+          Fakultas</div>
         <div
-          class="text-stonewee0 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          Blog</div>
+          class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
+          Kontak</div>
+        <div
+          class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
+          Jurnal</div>
       </div>
+
     </div>
-    <div class="hidden lg:block bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-xl text-sm font-medium shadow transition duration-200 hover:shadow-lg 
-              hover:cursor-pointer">
-      Daftar
+    <div
+      class="hidden lg:block bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-xl text-sm font-medium shadow transition duration-200 hover:shadow-lg hover:cursor-pointer">
+      Gabung Sekarang
     </div>
+
 
 
     <button id="hamburger-btn" class="lg:hidden text-stone-700">
@@ -36,19 +41,17 @@
 
   <div id="mobile-menu" class="hidden lg:hidden absolute w-full bg-amber-100 border-t border-amber-200 
               transition-all ease-out duration-200 opacity-0 -translate-y-2">
-    <div class="flex flex-col gap-2 px-4 pt-2 pb-4">
-      <a href="#"
-        class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Home</a>
-      <a href="#"
-        class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">About</a>
-      <a href="#"
-        class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Contact</a>
-      <a href="#"
-        class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Blog</a>
-      <div class="bg-red-400 p-2 rounded text-white text-center mt-2">
-        asd
-      </div>
-    </div>
+    <a href="#"
+      class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Beranda</a>
+    <a href="#"
+      class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Tentang</a>
+    <a href="#"
+      class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Fakultas</a>
+    <a href="#"
+      class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Kontak</a>
+    <a href="#"
+      class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Jurnal</a>
+
   </div>
 
 </div>
