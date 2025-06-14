@@ -136,7 +136,7 @@
       <h2 class="text-3xl md:text-4xl font-bold text-center text-stone-800 mb-12">Pilih Fakultasmu</h2>
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Fakultas Aegis -->
-        <div class="bg-white rounded-xl shadow-md p-6 flex flex-col space-y-4">
+        <div class="bg-white rounded-xl shadow-md p-6 flex flex-col space-y-4" data-aos="fade-right">
           <img src="/assets/fakultas/knight.png" alt="Fakultas Aegis" class="w-64 h-64 object-contain self-center">
           <h3 class="text-xl font-bold text-stone-800">Fakultas Aegis</h3>
           <p class="text-stone-600 text-sm">
@@ -154,7 +154,7 @@
         </div>
 
         <!-- Fakultas Sylvaran -->
-        <div class="bg-white rounded-xl shadow-md p-6 flex flex-col space-y-4">
+        <div class="bg-white rounded-xl shadow-md p-6 flex flex-col space-y-4" data-aos="fade-up">
           <img src="/assets/fakultas/archer.png" alt="Fakultas Sylvaran" class="w-64 h-64 object-contain self-center">
           <h3 class="text-xl font-bold text-stone-800">Fakultas Sylvaran</h3>
           <p class="text-stone-600 text-sm">
@@ -171,7 +171,7 @@
         </div>
 
         <!-- Fakultas Draconis -->
-        <div class="bg-white rounded-xl shadow-md p-6 flex flex-col space-y-4">
+        <div class="bg-white rounded-xl shadow-md p-6 flex flex-col space-y-4" data-aos="fade-left">
           <img src="/assets/fakultas/draconis.png" alt="Fakultas Draconis" class="w-64 h-64 object-contain self-center">
           <h3 class="text-xl font-bold text-stone-800">Fakultas Draconis</h3>
           <p class="text-stone-600 text-sm">
@@ -190,8 +190,9 @@
       </div>
     </div>
   </div>
-  <div class="h-screen bg-white">
-    <div class="px-[2rem] md:px-[10rem] w-full h-full py-20 flex flex-col items-center justify-center text-center space-y-6">
+  <div class="h-screen bg-white" data-aos="fade-up">
+    <div
+      class="px-[2rem] md:px-[10rem] w-full h-full py-20 flex flex-col items-center justify-center text-center space-y-6">
       <h2 class="text-3xl font-bold text-stone-800">Jurnal Terbaru</h2>
       <p class="text-stone-600 max-w-2xl text-sm">
         Temukan berbagai catatan, penelitian, dan kisah dari dunia kampus fantasi kami. Dari strategi pertempuran hingga

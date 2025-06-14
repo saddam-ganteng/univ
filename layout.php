@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" href="/assets/logo.png" type="image/png">
     <title><?= $title ?? 'Universitas Dragonara' ?></title>
@@ -21,7 +22,12 @@
     <!-- <main class="px-4 md:px-10 lg:px-20 py-4"> -->
     <?php include $content; ?>
     <!-- </main> -->
-    <!-- <?php include 'templates/footer.php'; ?> -->
+    <?php include 'templates/footer.php'; ?>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
