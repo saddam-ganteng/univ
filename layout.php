@@ -19,9 +19,7 @@
 
 <body>
     <?php include 'templates/topbar.php'; ?>
-    <!-- <main class="px-4 md:px-10 lg:px-20 py-4"> -->
     <?php include $content; ?>
-    <!-- </main> -->
     <?php include 'templates/footer.php'; ?>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

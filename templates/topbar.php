@@ -7,30 +7,31 @@
         <img src="/assets/logo.png" alt="Logo" class="w-14 h-14">
       </div>
       <div class="hidden lg:flex items-center gap-10">
-        <div
-          class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          Beranda</div>
-        <div
-          class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          Tentang</div>
-        <div
-          class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          Fakultas</div>
-        <div
-          class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          Kontak</div>
-        <div
-          class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal hover:cursor-pointer">
-          Jurnal</div>
+        <a href="home" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+          Beranda
+        </a>
+        <a href="tentang" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+          Tentang
+        </a>
+        <a href="fakultas" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+          Fakultas
+        </a>
+        <a href="kontak" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+          Kontak
+        </a>
+        <a href="jurnal" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+          Jurnal
+        </a>
+
       </div>
 
     </div>
-    <div
-      class="hidden lg:block bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-xl text-sm font-medium shadow transition duration-200 hover:shadow-lg hover:cursor-pointer">
-      Gabung Sekarang
-    </div>
-
-
+    <?php if ($currentPage !== 'daftar'): ?>
+      <div
+        class="hidden lg:block bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-xl text-sm font-medium shadow transition duration-200 hover:shadow-lg hover:cursor-pointer">
+        <a href="daftar">Gabung Sekarang</a>
+      </div>
+    <?php endif; ?>
 
     <button id="hamburger-btn" class="lg:hidden text-stone-700">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -41,15 +42,15 @@
 
   <div id="mobile-menu" class="hidden lg:hidden absolute w-full bg-amber-100 border-t border-amber-200 
               transition-all ease-out duration-200 opacity-0 -translate-y-2">
-    <a href="#"
+    <a href="home"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Beranda</a>
-    <a href="#"
+    <a href="tentang"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Tentang</a>
-    <a href="#"
+    <a href="fakultas"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Fakultas</a>
-    <a href="#"
+    <a href="kontak"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Kontak</a>
-    <a href="#"
+    <a href="jurnal"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Jurnal</a>
 
   </div>
