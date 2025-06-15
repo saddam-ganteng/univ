@@ -1,6 +1,11 @@
 <?php
 session_start();
 
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: ../daftar');
+    exit;
+}
+
 $url = 'https://rytjeruayveyncmiwhkf.supabase.co/rest/v1/pendaftaran';
 $apikey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5dGplcnVheXZleW5jbWl3aGtmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0ODkxNDM5NywiZXhwIjoyMDY0NDkwMzk3fQ.WtzNB1fdHGKKgXK2yNZLP5e1ENRTbKNzdnPQh4W6EPk';
 
@@ -10,7 +15,8 @@ $fakultas = $_POST['fakultas_dipilih'] ?? '';
 $alasan = $_POST['alasan'] ?? '';
 
 if (!$nama || !$email || !$fakultas || !$alasan) {
-    echo "Semua field wajib diisi.";
+    $_SESSION['error_message'] = "Semua field wajib diisi.";
+    header("Location: ../daftar");
     exit;
 }
 

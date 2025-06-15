@@ -1,18 +1,14 @@
 <?php
+ob_start();
+if (session_status() === PHP_SESSION_NONE) session_start();
 include_once "configs/db.php";
 
-$page = $_GET['page'] ?? 'home';
+$uri = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+$page = trim($uri, '/');
+$page = $page ?: 'home'; // fallback jika kosong
 
 $title = ucfirst($page) . ' | Universitas Dragonara';
 
-// Cek kalau misal URL kayak daftar/proses
-if (strpos($page, '/') !== false && file_exists("pages/{$page}.php")) {
-    $title = ucfirst(basename($page)) . ' | Universitas Dragonara';
-    include "pages/{$page}.php";
-    exit;
-}
-
-// Normal routing
 if (is_dir("pages/{$page}") && file_exists("pages/{$page}/index.php")) {
     $content = "pages/{$page}/index.php";
 } elseif (file_exists("pages/{$page}.php")) {
@@ -24,3 +20,5 @@ if (is_dir("pages/{$page}") && file_exists("pages/{$page}/index.php")) {
 
 $currentPage = $page;
 include "layout.php";
+
+ob_end_flush();

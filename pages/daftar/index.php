@@ -5,7 +5,22 @@
         <p class="text-center text-sm text-stone-600 mb-8">
             Bergabunglah dengan Akademi Dragonara dan pilih jalanmu sebagai pahlawan masa depan.
         </p>
-        
+
+        <?php if (!empty($_SESSION['success_message'])): ?>
+            <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
+                <?= $_SESSION['success_message'];
+                unset($_SESSION['success_message']); ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (!empty($_SESSION['error_message'])): ?>
+            <div class="bg-red-100 text-red-800 p-4 rounded mb-4">
+                <?= $_SESSION['error_message'];
+                unset($_SESSION['error_message']); ?>
+            </div>
+        <?php endif; ?>
+
+
         <form action="/daftar/proses" method="post">
             <div class="grid grid-cols-1 gap-6">
                 <div>
@@ -46,3 +61,4 @@
         </form>
     </div>
 </div>
+<?php ob_end_flush(); ?>
