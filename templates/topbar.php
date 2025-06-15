@@ -4,19 +4,19 @@
 
     <div class="flex items-center gap-10">
       <div>
-        <img src="/assets/logo.png" alt="Logo" class="w-14 h-14">
+        <img id="admin-access-trigger" src="/assets/logo.png" alt="Logo" class="w-14 h-14">
       </div>
       <div class="hidden lg:flex items-center gap-10">
-        <a href="home" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+        <a href="/home" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
           Beranda
         </a>
-        <a href="tentang" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+        <a href="/tentang" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
           Tentang
         </a>
-        <a href="fakultas" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+        <a href="/fakultas" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
           Fakultas
         </a>
-        <a href="jurnal" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
+        <a href="/jurnal" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
           Jurnal
         </a>
 
@@ -26,7 +26,7 @@
     <?php if ($currentPage !== 'daftar'): ?>
       <div
         class="hidden lg:block bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-xl text-sm font-medium shadow transition duration-200 hover:shadow-lg hover:cursor-pointer">
-        <a href="daftar">Gabung Sekarang</a>
+        <a href="/daftar">Gabung Sekarang</a>
       </div>
     <?php endif; ?>
 
@@ -39,13 +39,13 @@
 
   <div id="mobile-menu" class="hidden lg:hidden absolute w-full bg-amber-100 border-t border-amber-200 
               transition-all ease-out duration-200 opacity-0 -translate-y-2">
-    <a href="home"
+    <a href="/home"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Beranda</a>
-    <a href="tentang"
+    <a href="/tentang"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Tentang</a>
-    <a href="fakultas"
+    <a href="/fakultas"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Fakultas</a>
-    <a href="jurnal"
+    <a href="/jurnal"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Jurnal</a>
 
   </div>

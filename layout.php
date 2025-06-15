@@ -26,6 +26,23 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        let clickCount = 0;
+        const trigger = document.getElementById('admin-access-trigger');
+
+        if (trigger) {
+            trigger.addEventListener('click', () => {
+                clickCount++;
+                if (clickCount === 3) {
+                    window.location.href = '/admin';
+                }
+
+                setTimeout(() => {
+                    clickCount = 0;
+                }, 1000);
+            });
+        }
+    </script>
 </body>
 
 </html>
