@@ -131,7 +131,7 @@
 
     </div>
   </div>
-  <div class="h-screen bg-stone-50">
+  <div class="min-h-screen bg-stone-50 overflow-x-hidden">
     <div class="px-[2rem] md:px-[10rem] w-full py-20 h-full flex flex-col items-center justify-center">
       <h2 class="text-3xl md:text-4xl font-bold text-center text-stone-800 mb-12">Pilih Fakultasmu</h2>
       <div class="grid md:grid-cols-3 gap-8">
@@ -190,7 +190,7 @@
       </div>
     </div>
   </div>
-  <div class="h-screen bg-white" data-aos="fade-up">
+  <div class="min-h-screen bg-white" data-aos="fade-up">
     <div
       class="px-[2rem] md:px-[10rem] w-full h-full py-20 flex flex-col items-center justify-center text-center space-y-6">
       <h2 class="text-3xl font-bold text-stone-800">Jurnal Terbaru</h2>

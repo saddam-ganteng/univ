@@ -50,7 +50,7 @@ $journals = [
 ?>
 
 <div class="min-h-screen bg-gradient-to-b from-stone-50 via-white to-rose-100 px-6 py-16 pt-30">
-    <div class="max-w-5xl mx-auto space-y-12">
+    <div class="h-full w-full max-w-7xl mx-auto space-y-12">
 
         <div class="text-center">
             <h1 class="text-4xl font-bold text-stone-800 mb-2">Jurnal Akademik Dragonara</h1>

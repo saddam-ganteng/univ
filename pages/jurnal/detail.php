@@ -20,6 +20,8 @@ if (!$jurnal) {
     echo "<p class='text-center mt-20 text-red-600'>Jurnal tidak ditemukan.</p>";
     return;
 }
+
+$title = "Detail Jurnal | Universitas Dragonara";
 ?>
 
 <div class="min-h-screen bg-gradient-to-b from-white via-stone-50 to-amber-50 px-6 py-16 pt-30">
