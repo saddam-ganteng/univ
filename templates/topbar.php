@@ -16,9 +16,6 @@
         <a href="fakultas" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
           Fakultas
         </a>
-        <a href="kontak" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
-          Kontak
-        </a>
         <a href="jurnal" class="text-stone-700 hover:text-amber-700 hover:underline transition-colors font-normal">
           Jurnal
         </a>
@@ -48,8 +45,6 @@
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Tentang</a>
     <a href="fakultas"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Fakultas</a>
-    <a href="kontak"
-      class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Kontak</a>
     <a href="jurnal"
       class="block px-3 py-2 rounded-md text-base font-medium text-stone-700 hover:text-amber-700 hover:bg-amber-200">Jurnal</a>
 
