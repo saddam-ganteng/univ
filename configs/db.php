@@ -4,6 +4,10 @@
 // Ganti dengan project Supabase kamu
 define('SUPABASE_URL', 'https://rytjeruayveyncmiwhkf.supabase.co');
 define('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5dGplcnVheXZleW5jbWl3aGtmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0ODkxNDM5NywiZXhwIjoyMDY0NDkwMzk3fQ.WtzNB1fdHGKKgXK2yNZLP5e1ENRTbKNzdnPQh4W6EPk');
+define('SUPABASE_BUCKET', 'jurnal-images');
+$SUPABASE_URL = 'rytjeruayveyncmiwhkf.supabase.co';
+$SUPABASE_BUCKET = 'jurnal-images';
+$supabaseStorageUrl = "https://$SUPABASE_URL/storage/v1/object/public/$SUPABASE_BUCKET/";
 
 function supabase_fetch($table)
 {
@@ -48,4 +52,31 @@ function supabase_insert($table, $data)
     return [$httpcode, json_decode($response, true)];
 }
 
+function upload_to_supabase_storage($tmpPath, $fileName, $bucket = SUPABASE_BUCKET)
+{
+    $upload_url = SUPABASE_URL . "/storage/v1/object/$bucket/$fileName";
+
+    $fileData = file_get_contents($tmpPath);
+    $headers = [
+        "Authorization: Bearer " . SUPABASE_KEY,
+        "Content-Type: application/octet-stream",
+        "x-upsert: true"
+    ];
+
+    $ch = curl_init($upload_url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $fileData);
+
+    $response = curl_exec($ch);
+    $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($httpcode === 200 || $httpcode === 201) {
+        return SUPABASE_URL . "/storage/v1/object/public/$bucket/$fileName";
+    } else {
+        return false;
+    }
+}
 ?>
