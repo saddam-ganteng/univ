@@ -17,6 +17,7 @@ $title = "Pendaftar | Universitas Dragonara";
                     <th class="px-6 py-3 text-left text-sm font-semibold">Email</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Fakultas</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Alasan</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aksi</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-stone-100 text-sm text-stone-700">
@@ -27,6 +28,16 @@ $title = "Pendaftar | Universitas Dragonara";
                         <td class="px-6 py-4"><?= htmlspecialchars($p['email']) ?></td>
                         <td class="px-6 py-4"><?= htmlspecialchars($p['fakultas']) ?></td>
                         <td class="px-6 py-4"><?= htmlspecialchars($p['alasan_mendaftar']) ?></td>
+                        <td class="px-6 py-4 flex gap-2">
+                            <a href="proses-terima.php?id=<?= $p['id'] ?>"
+                                class="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition">
+                                Terima
+                            </a>
+                            <a href="proses-tolak.php?id=<?= $p['id'] ?>"
+                                class="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition">
+                                Tolak
+                            </a>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
