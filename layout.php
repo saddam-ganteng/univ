@@ -30,7 +30,7 @@
         </div>
     <?php else: ?>
         <!-- Layout untuk publik -->
-        <?php include 'templates/topbar.php'; ?>
+        <!-- <?php include 'templates/topbar.php'; ?> -->
         <?= $pageContent ?>
         <?php include 'templates/footer.php'; ?>
     <?php endif; ?>
