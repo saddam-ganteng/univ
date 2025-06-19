@@ -14,7 +14,7 @@ $title = "Pendaftar | Universitas Dragonara";
             <button onclick="this.parentElement.style.display='none'"
                 class="absolute right-3 top-2 text-lg font-bold">&times;</button>
         </div>
-        <?php unset($_SESSION['success_message']); ?>
+    <?php unset($_SESSION['success_message']); ?>
     <?php elseif (isset($_SESSION['error_message'])): ?>
         <div class="mb-4 px-4 py-3 bg-red-100 text-red-800 border border-red-300 rounded relative">
             <?= $_SESSION['error_message'] ?>
