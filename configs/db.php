@@ -1,7 +1,5 @@
 <?php
-// configs/db.php
 
-// Ganti dengan project Supabase kamu
 define('SUPABASE_URL', 'https://rytjeruayveyncmiwhkf.supabase.co');
 define('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5dGplcnVheXZleW5jbWl3aGtmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0ODkxNDM5NywiZXhwIjoyMDY0NDkwMzk3fQ.WtzNB1fdHGKKgXK2yNZLP5e1ENRTbKNzdnPQh4W6EPk');
 define('SUPABASE_BUCKET', 'jurnal-images');
