@@ -128,7 +128,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
   <div class="min-h-screen bg-stone-50 overflow-x-hidden">
